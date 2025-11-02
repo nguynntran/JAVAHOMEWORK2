@@ -1,5 +1,5 @@
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
@@ -46,7 +46,11 @@ public class Main {
         // Create an observer to track supervisor changes
         SupervisorChangeObserver observer = new SupervisorChangeObserver();
         zoo1.addObserver(observer);
-
+        
+        // Add supervisors to zoo1 (they were only added to zoo)
+        zoo1.addSupervisor(supervisor1);
+        zoo1.addSupervisor(supervisor2);
+        
         // 5.Assign supervisors to animals
         zoo1.assignSupervisor(101, 1);  // Assign John
         zoo1.assignSupervisor(102, 1);  // Assign John
