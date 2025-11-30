@@ -12,8 +12,7 @@ public class Zoo {
     private Map<Integer, Supervisor> supervisors;
     private List<ZooObserver> observers;
     private TreeSet<Animal> animalsByHeight;
-    // It must be a collection not pass through all List
-    // Default constructor
+    
     public Zoo() {
         animals = new HashMap<>();
         supervisors = new HashMap<>();
