@@ -37,11 +37,11 @@ public class Zoo {
     public void getAnimalById(int id){
         Animal animal = animals.get(id);
         if (animal != null) {
-            System.out.println("Animal with ID" + id + "found");
-            System.out.println("Type of animal is:" + animal.getType());
-            System.out.println("Height of animal is:" + animal.getHeight());
+            System.out.println("Animal with ID " + id + " found");
+            System.out.println("Type of animal is: " + animal.getType());
+            System.out.println("Height of animal is: " + animal.getHeight());
         } else {
-            System.out.println("Animal with ID" + id + " not found");
+            System.out.println("Animal with ID " + id + " not found");
         }
     }
 
